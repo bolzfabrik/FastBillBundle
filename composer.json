@@ -21,7 +21,7 @@
         "symfony/class-loader": "~2.1"
     },
     "autoload": {
-        "psr-0": {"DVelopment\\FastBillBundle\\": ""}
+        "psr-0": {"DVelopment\FastBillBundle": ""}
     },
     "minimum-stability": "dev",
     "target-dir": "DVelopment\\FastBillBundle"
