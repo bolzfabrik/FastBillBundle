@@ -21,6 +21,7 @@ Then just add the bundle to your `AppKernel.php` file:
         new DVelopment\FastBillBundle\DVelopmentFastBillBundle(),
         // ...
     );
+    ```
 
 ## Configuration
 
@@ -32,6 +33,7 @@ You need to configure your FastBill API credentials in `config.yml` (you can fin
     	# used to sign up to FastBill
         username: %fast_bill_username% 
         apiKey:   %fast_bill_api_key%
+    ```
         
         
 ## Usage
@@ -42,3 +44,5 @@ The API wrapper is available as `d_velopment_fast_bill.api` service:
     <?php
     $api = $container->get('d_velopment_fast_bill.api');
     $customers = $api->getCustomers();
+    ```
+    
