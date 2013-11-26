@@ -13,36 +13,36 @@ or add the package directly to your `composer.json` file and run `composer updat
 
 Then just add the bundle to your `AppKernel.php` file:
 
-    ```PHP
-    <?php
-    // in AppKernel::registerBundles()
-    $bundles = array(
-        // ...
-        new DVelopment\FastBillBundle\DVelopmentFastBillBundle(),
-        // ...
-    );
-    ```
+```PHP
+<?php
+// in AppKernel::registerBundles()
+$bundles = array(
+    // ...
+    new DVelopment\FastBillBundle\DVelopmentFastBillBundle(),
+    // ...
+);
+```
 
 ## Configuration
 
 You need to configure your FastBill API credentials in `config.yml` (you can find the API Key inside the Settings area of your account settings on [my.fastbill.com](https://my.fastbill.com))
 
-    ```YAML
-    d_velopment_fast_bill:
-    	# the username is your e-mail address
-    	# used to sign up to FastBill
-        username: %fast_bill_username% 
-        apiKey:   %fast_bill_api_key%
-    ```
+```YAML
+d_velopment_fast_bill:
+    # the username is your e-mail address
+    # used to sign up to FastBill
+    username: %fast_bill_username%
+    apiKey:   %fast_bill_api_key%
+```
         
         
 ## Usage
 
 The API wrapper is available as `d_velopment_fast_bill.api` service:
 
-    ```PHP
-    <?php
-    $api = $container->get('d_velopment_fast_bill.api');
-    $customers = $api->getCustomers();
-    ```
+```PHP
+<?php
+$api = $container->get('d_velopment_fast_bill.api');
+$customers = $api->getCustomers();
+```
     
