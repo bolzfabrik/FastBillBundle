@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "dvelopment/fastbill": "dev-master",
+        "dvelopment/fastbill": "1.0.x",
         "symfony/framework-bundle": "~2.1"
     },
     "require-dev": {
