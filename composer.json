@@ -5,6 +5,12 @@
     "keywords": ["symfony", "fastbill"],
     "homepage": "https://github.com/dVelopment/FastBillBundle",
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bolzfabrik/fastbill"
+        }
+    ],
     "authors": [
         {
             "name": "Daniel Holzmann",
@@ -13,7 +19,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "dvelopment/fastbill": "1.0.x",
+        "dvelopment/fastbill": "dev-master#adc7ce6c2d818e10576ce5e953dfe18201509e80 as 1.0.0",
         "symfony/framework-bundle": "~2.1"
     },
     "require-dev": {
